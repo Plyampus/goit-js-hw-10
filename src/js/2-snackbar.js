@@ -9,6 +9,7 @@ formOfDelay.addEventListener('submit', event => {
     const selectedRadioButton = event.currentTarget.querySelector('input[name="state"]:checked');
     const promiseState = selectedRadioButton ? selectedRadioButton.value : null;
 
+    
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (promiseState === "fulfilled") {
