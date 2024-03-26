@@ -20,6 +20,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .pagelink {
   display: inline-flex;
   font-size: large;
@@ -162,8 +166,10 @@ legend {
 input.input-delay {
   border-style: solid;
   max-width: 360px;
-  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
 
 .fulfilled {
   padding-top: 24px;
